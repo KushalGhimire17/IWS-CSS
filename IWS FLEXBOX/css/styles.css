@@ -1,0 +1,48 @@
+section div {
+    padding: 30px;
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    font-size: 50px;
+    color: coral;
+}
+
+section {
+    height: 300px;
+    background-color: yellowgreen;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: initial; */
+    /* flex-direction: inherit; */
+    /* flex-direction: unset; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+    align-items: center;
+    /* align-items: flex-end; */
+    /* justify content for horizontal and align items for vertical */
+
+}
+
+section div:nth-child(odd) {
+    background-color:cornsilk;
+}
+
+.a {
+    /* flex basis is similar to width */
+    flex-basis: 300px; 
+}
+
+.b, .e, .f {
+    /* comment out flex-wrap.  */
+    flex-shrink: 0;
+}
+
+.c {
+    /* take oly a b and c div to see the change */
+    flex-grow: 3;
+}
